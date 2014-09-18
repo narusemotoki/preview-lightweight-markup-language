@@ -15,7 +15,7 @@ Append these lines to your ~/.emacs.d/init.el.
     (setq load-path (cons "/path/to/preview-lightweight-markup-language" load-path))
     (load "preview-lightweight-markup-language")
 
-This elisp depends on Python and a libraries.
+This elisp depends on Python and libraries.
 ::
 
     $ sudo pip install -r requirements.txt
