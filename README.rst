@@ -2,6 +2,7 @@
 Preview Lightweight Markup Language
 ===================================
 This elisp makes Lightweight Markup Languages easy to write and preview.
+Emacs call Python script that compile reStructuredText to HTML. And emacs-w3m opens that.
 
 -------
 Install
@@ -14,7 +15,7 @@ Append these lines to your ~/.emacs.d/init.el.
     (setq load-path (cons "/path/to/preview-lightweight-markup-language" load-path))
     (load "preview-lightweight-markup-language")
 
-This elisp depends on Python and the libraries.
+This elisp depends on Python and a libraries.
 ::
 
     $ sudo pip install -r requirements.txt
