@@ -89,7 +89,7 @@
   (moz-open-uri-in-new-tab plml-output-html-file-path)
 )
 
-(defun plml-reload-markdown ()
+(defun plml-markdown-reload ()
   (interactive)
   (cond ((string-match "\\.md$" buffer-file-name)
          (shell-command (format "markdown_py %s > %s 2>&1" buffer-file-name plml-output-html-path))
@@ -99,6 +99,6 @@
 
 (defun plml-markdown ()
   (interactive)
-  (plml-reload-markdown)
+  (plml-markdown-reload)
   (moz-open-uri-in-new-tab plml-output-html-file-path)
 )
