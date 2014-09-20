@@ -52,3 +52,13 @@
   (moz-open-uri-in-new-tab plml-output-html-file-path)
 )
 
+(defun plml-gen-from-markdown ()
+  (interactive)
+  (shell-command (format "markdown_py %s > %s 2>&1" buffer-file-name plml-output-html-path))
+)
+
+(defun plml-markdown ()
+  (interactive)
+  (plml-gen-from-markdown)
+  (moz-open-uri-in-new-tab plml-output-html-file-path)
+)

@@ -4,6 +4,12 @@ Preview Lightweight Markup Language
 This elisp makes Lightweight Markup Languages easy to write and preview.
 Emacs call Python script that compile reStructuredText to HTML. And emacs-w3m opens that.
 
+-----------------
+Support languages
+-----------------
+* reStructuredText
+* Markdown
+
 -------
 Install
 -------
@@ -26,10 +32,3 @@ And `w3m <http://w3m.sourceforge.net/index.en.html>`_.
 How to use this
 ---------------
 If you don't use this elisp yet, run "M-x plml-rst". Otherwise run "M-x plml-gen-from-rst" and type R on w3m buffer.
-
-----
-ToDo
-----
-* Auto refresh
-* Implements Firefox option.
-* Implements another languages. (e.g. Markdown)
