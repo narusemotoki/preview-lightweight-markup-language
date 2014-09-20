@@ -77,7 +77,7 @@
 
 (defun plml-gen-from-rst ()
   (interactive)
-  (shell-command (format "python %srst.py %s > %s 2>&1" plml-directory buffer-file-name plml-output-html-path))
+  (shell-command (format "rst2html.py %s > %s 2>&1" buffer-file-name plml-output-html-path))
 )
 
 (defun plml-rst ()
