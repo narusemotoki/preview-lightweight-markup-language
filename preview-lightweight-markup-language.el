@@ -7,11 +7,14 @@
 ;; Copyright (C) 2014, Motoki Naruse, all rights reserved.
 ;; Created: 2014-09-17
 ;; Version: 0.1
-;; Last-Updated: 2014-09-20
-;;           By: Motoki Naruse
+;; Last-Updated: 2014-09-20 By: Motoki Naruse
 ;; URL: https://github.com/narusemotoki/preview-lightweight-markup-language
 ;; Keywords:
 ;; Compatibility: GNU Emacs 24
+;;
+;; This library depends on:
+;;
+;; "moz"
 
 ;;; This file is NOT part of GNU Emacs
 
