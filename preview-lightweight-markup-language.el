@@ -25,13 +25,13 @@
 
 (defun plml-reload-firefox ()
   (comint-send-string (inferior-moz-process) (format "
-(function reload() {
-  for(var i = 0; i < gBrowser.browsers.length; i++) {
-    if (gBrowser.getBrowserAtIndex(i).currentURI.spec === '%s') {
-      gBrowser.selectedTab = gBrowser.tabContainer.childNodes[i];
-      BrowserReload();
+(function() {
+    for(var i = 0; i < gBrowser.browsers.length; i++) {
+        if (gBrowser.getBrowserAtIndex(i).currentURI.spec === '%s') {
+            gBrowser.selectedTab = gBrowser.tabContainer.childNodes[i];
+            BrowserReload();
+        }
     }
-  }
 })();
 " plml-output-html-file-path)))
 
